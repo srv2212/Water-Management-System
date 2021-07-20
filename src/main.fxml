@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePageController">
+   <children>
+      <Button fx:id="customerButton" layoutX="258.0" layoutY="153.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="306.0" style="-fx-background-color: #E96151;" text="Customer" textFill="#fafafa">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="supplierButton" layoutX="258.0" layoutY="245.0" mnemonicParsing="false" onAction="#supplierButtonOnAction" prefHeight="55.0" prefWidth="306.0" style="-fx-background-color: #E96151;" text="Supplier" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <AnchorPane prefHeight="111.0" prefWidth="600.0" style="-fx-background-color: #E96151;">
+         <children>
+            <Label layoutX="100.0" layoutY="36.0" prefHeight="38.0" prefWidth="422.0" text="Water Supply Management System" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="229.0" fitWidth="199.0" layoutX="24.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@watercan.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="exitButton" layoutX="365.0" layoutY="336.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="30.0" prefWidth="92.0" text="Exit" />
+   </children>
+</AnchorPane>

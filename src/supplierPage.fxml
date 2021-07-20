@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="799.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="supplierPageController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="95.0" prefWidth="218.0" style="-fx-background-color: DF5D3B;">
+         <children>
+            <Label fx:id="cnameLabel" layoutX="27.0" layoutY="22.0" prefHeight="50.0" prefWidth="190.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="218.0" prefHeight="460.0" prefWidth="582.0">
+         <children>
+            <AnchorPane fx:id="centerpane" prefHeight="460.0" prefWidth="582.0" />
+         </children>
+      </AnchorPane>
+      <VBox layoutY="94.0" prefHeight="231.0" prefWidth="218.0" style="-fx-background-color: #E96353;">
+         <children>
+            <Button fx:id="orderButton" alignment="CENTER" mnemonicParsing="false" onAction="#ordersButtonOnAction" prefHeight="50.0" prefWidth="218.0" stylesheets="@css/style.css" text="ORDERS" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="updateStockButton" alignment="CENTER" mnemonicParsing="false" onAction="#updateStockButtonOnAction" prefHeight="50.0" prefWidth="218.0" stylesheets="@css/style.css" text="UPDATE STOCK" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewProfileButton" alignment="CENTER" mnemonicParsing="false" onAction="#viewProfileButtonOnAction" prefHeight="50.0" prefWidth="218.0" stylesheets="@css/style.css" text="VIEW PROFILE" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane layoutY="318.0" prefHeight="143.0" prefWidth="218.0" style="-fx-background-color: #E96353;">
+         <children>
+            <Button fx:id="logoutButton" layoutX="33.0" layoutY="54.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" prefHeight="26.0" prefWidth="151.0" style="-fx-background-color: #FFFFFF;" text="Logout" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
