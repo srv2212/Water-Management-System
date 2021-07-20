@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="feedbackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FeedbackPaneController">
+   <children>
+      <Pane layoutY="69.0" prefHeight="84.0" prefWidth="646.0" style="-fx-background-color: #445eeb;">
+         <children>
+            <Label layoutX="50.0" prefHeight="84.0" prefWidth="290.0" text="Feedback" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ComboBox fx:id="companyComboBox" layoutX="75.0" layoutY="201.0" onAction="#companyComboBoxOnAction" prefHeight="30.0" prefWidth="150.0" promptText="Select Company" />
+      <TextArea fx:id="feedbackTextArea" layoutX="75.0" layoutY="328.0" prefHeight="111.0" prefWidth="477.0" promptText="Write Your Feedback Here" />
+      <Button fx:id="postButton" layoutX="297.0" layoutY="456.0" mnemonicParsing="false" onAction="#postButtonOnAction" text="Post" />
+      <Label layoutX="75.0" layoutY="268.0" prefHeight="51.0" prefWidth="134.0" text="Feedback">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomelabel" layoutX="45.0" prefHeight="64.0" prefWidth="329.0" text="Welcome">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
